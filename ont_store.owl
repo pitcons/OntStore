@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/5/ont_store.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2011/5/ont_store.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="ont_store" IRI="http://www.semanticweb.org/ontologies/2011/5/ont_store.owl#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2011/5/ont_store.owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ArbitraryConstraintsOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormalInstanceOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormalTaxonomyOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FramePropertyOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdCataologOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWL2_EL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWL2_QL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWL2_RL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OntologyTypeByContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OntologyTypeByTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OwlProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Read"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reasoner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReversePropertyOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThesaurusOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopLevelOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnformalTaxonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueConstraintsOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViewOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WordOfTermsOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Write"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#backwardCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAutor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPermission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#incompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#priorVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#license"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#site"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ArbitraryConstraintsOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonOntology"/>
+        <Class IRI="#OntologyTypeByContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainOntology"/>
+        <Class IRI="#OntologyTypeByTarget"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormalInstanceOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormalTaxonomyOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FramePropertyOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grant"/>
+        <Class IRI="#Permission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdCataologOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWL2_EL"/>
+        <Class IRI="#OwlProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWL2_QL"/>
+        <Class IRI="#OwlProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWL2_RL"/>
+        <Class IRI="#OwlProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyTypeByContent"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyTypeByTarget"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Read"/>
+        <Class IRI="#Permission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReversePropertyOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectOntology"/>
+        <Class IRI="#OntologyTypeByContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskOntology"/>
+        <Class IRI="#OntologyTypeByContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThesaurusOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TopLevelOntology"/>
+        <Class IRI="#OntologyTypeByTarget"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnformalTaxonomy"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueConstraintsOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewOntology"/>
+        <Class IRI="#OntologyTypeByTarget"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WordOfTermsOntology"/>
+        <Class IRI="#OntologyTypeByFormalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Write"/>
+        <Class IRI="#Permission"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Autor"/>
+        <NamedIndividual IRI="#Autor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Autor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Autor"/>
+        <NamedIndividual IRI="#Autor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Autor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#CEL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#CEL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#ELLY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#ELLY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#Fact++"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Fact++"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#Group1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Group1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#Group2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Group2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#HermiT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#HermiT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#Jena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Jena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#OWLIM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#OWLIM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#OWLRL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#OWLRL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#Owlgres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Owlgres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#Pellet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Pellet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#QuOnto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#QuOnto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#Quill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Quill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#REL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#REL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#RacerPro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#RacerPro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#SHER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#SHER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#SomeOntology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#SomeOntology1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#SomeOntology2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reasoner"/>
+        <NamedIndividual IRI="#snorocket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#snorocket"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inGroup"/>
+        <NamedIndividual IRI="#Autor1"/>
+        <NamedIndividual IRI="#Group1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inGroup"/>
+        <NamedIndividual IRI="#Autor2"/>
+        <NamedIndividual IRI="#Group2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#license"/>
+        <NamedIndividual IRI="#Fact++"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LGPL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Fact++"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://code.google.com/p/factplusplus/</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#backwardCompatibleWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAutor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPermission"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inGroup"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#incompatibleWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#priorVersion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAutor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAutor"/>
+            <Class IRI="#Autor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#inGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useProfile"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#useProfile"/>
+            <Class IRI="#OwlProfile"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+
